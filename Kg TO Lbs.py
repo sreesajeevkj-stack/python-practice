@@ -1,0 +1,13 @@
+WEIGHT = float(input("ENTER THE WEIGHT :"))
+UNIT = input("ENTER KILOGRAM OR POUNDS [KG OR LBS] :")
+
+if UNIT == 'KG':
+    WEIGHT = WEIGHT*2.205
+    UNIT = 'LBS'
+elif UNIT == 'LBS':
+    WEIGHT = WEIGHT/2.205
+    UNIT = 'KG'
+else :
+    print("PLEASE ENTER THE VALID UNIT!!!")
+
+print(f"THE CONVERTED WEIGHT IS {WEIGHT}{UNIT}")
